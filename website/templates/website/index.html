@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haar & Härz - Coiffeur</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="Haar & Härz Logo">
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#preise" class="nav-link">Preise</a></li>
+                        <li><a href="#termine" class="nav-link">Termine</a></li>
+                        <li><a href="#oeffnungszeiten" class="nav-link">Öffnungszeiten</a></li>
+                        <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+                        <li><a href="#booking" class="nav-link">SumUp Booking</a></li>
+                    </ul>
+                </nav>
+                <div class="header-button">
+                    <a href="#buchen" class="btn-book">JETZT BUCHEN</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">WILLKOMMEN BEI HAAR UND HÄRZ</h1>
+            <p class="hero-subtitle">
+                Als deine Coiffeuse ist es meine Leidenschaft, durch präzise<br>
+                Schnitte, strahlende Farben und die neuesten Techniken das<br>
+                Beste aus deinem Haar herauszuholen.
+            </p>
+        </div>
+    </section>
+
+    <section class="services" id="dienstleistungen">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="services-title">MEINE</h2>
+                <h2 class="services-title">DIENSTLEISTUNGEN</h2>
+                <p class="services-subtitle">Jede große Verwandlung findet ihren Ursprung in der Beratung.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{% static 'images/service-schnitt.jpg' %}" alt="Schnitt">
+                    </div>
+                    <h3 class="service-title">SCHNITT</h3>
+                    <p class="service-description">
+                        Der perfekte Haarschnitt beginnt mit der richtigen Beratung. Ich nehme mir die Zeit, um Deine Wünsche und die Besonderheiten deines Haars kennenzulernen, damit ich eine Frisur schaffe, die nicht nur zu Dir, sondern auch zu deinem Lebensstil passt. Ich bin immer am Puls der Zeit und setze die neusten Trends und Techniken gekonnt um.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{% static 'images/service-farbe.jpg' %}" alt="Farbe">
+                    </div>
+                    <h3 class="service-title">FARBE</h3>
+                    <p class="service-description">
+                        Bevor die Farbe ins Spiel kommt, steht die richtige Beratung im Mittelpunkt. Ich analysiere Deinen Haut- und Haartyp und finde die Nuancen, die Deine natürliche Schönheit am besten unterstreichen. Gemeinsam wählen wir die perfekte Haarfärbung und weiß genau, wie ich Ihnen Stil zur Geltung bringen kann.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="{% static 'images/service-dauerwelle.jpg' %}" alt="Dauerwelle">
+                    </div>
+                    <h3 class="service-title">DAUERWELLE</h3>
+                    <p class="service-description">
+                        Bevor wir die Dauerwelle starten, steht die richtige, typgerechte Beratung im Vordergrund. Ich analysiere deine Haarstruktur und stelle sicher, dass die Behandlung mit den neuesten Techniken der Haarstrukturveränderung sicher ist und weiß genau, wie ich Dein Stil unterstreichen kann.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="ueber-mich">
+        <div class="container">
+            <div class="about-content">
+                <p class="about-text">
+                    Mein Traum, Coiffeuse zu werden, begleitet mich, seit ich denken kann. Schon während der Schulzeit, in der Klasse, begann ich, diesen Wunsch aktiv zu verfolgen. Ich startete einen außerordentlichen Spätenjob in einem Coiffeurgeschäft.
+                </p>
+                <p class="about-text">
+                    Ich habe meine Ausbildung erfolgreich abgeschlossen und besitze das Eidgenössische Fähigkeitszeugnis, das ich im Jahr 2023 in Winterthur, im Salon Schnitt-Kopf erlangte – dies ist Beruf – es ist meine Leidenschaft.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Haar und Härz</h4>
+                    <p class="footer-text">Jasmin Feller</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Standort</h4>
+                    <p class="footer-text">Jasminstrasse 77,<br>5400 Burgdorf</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Kontakt</h4>
+                    <p class="footer-text">
+                        <a href="mailto:jasmin@haarundhaerz.com">jasmin@haarundhaerz.com</a><br>
+                        <a href="tel:0796830081">079 683 00 81</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Info</h4>
+                    <p class="footer-text">Termin:<br>Anruf oder WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
