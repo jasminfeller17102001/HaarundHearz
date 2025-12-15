@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SumUp Booking - Haar & Härz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="Haar & Härz Logo">
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li><a href="{% url 'website:index' %}" class="nav-link">Home</a></li>
+                        <li><a href="{% url 'website:preise' %}" class="nav-link">Preise</a></li>
+                        <li><a href="{% url 'website:oeffnungszeiten' %}" class="nav-link">Öffnungszeiten</a></li>
+                        <li><a href="{% url 'website:kontakt' %}" class="nav-link">Kontakt</a></li>
+                        <li><a href="{% url 'website:booking' %}" class="nav-link active">SumUp Booking</a></li>
+                    </ul>
+                </nav>
+                <div class="header-button">
+                    <a href="#buchen" class="btn-book">JETZT BUCHEN</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mehrere Leistungen Buchen Section -->
+    <section class="booking-multiple-section">
+        <div class="container">
+            <div class="booking-multiple-content">
+                <div class="booking-multiple-text">
+                    <h2 class="booking-section-title">MEHRERE LEISTUNGEN BUCHEN</h2>
+                    <p class="booking-description">
+                        Wenn Ihr Termin aus mehreren Behandlungen besteht – wie zum Beispiel einer Balayage und zusätzlich ein Waschen, Schneiden und Föhnen – müssen Sie eine alle gewünschten Leistungen einzeln im Buchungsformular auswählen.
+                    </p>
+                    <p class="booking-description">
+                        Da Leistungen wie Farben, Balayage und Strähnen oft eine separate Auswahl von Balayage und Waschen/Schneiden/Föhnen kann unser System die Zeiten korrekt addieren. Das stellt sicher, dass wir ausreichend Zeit für die einzelnen und keine unnötige Hektik entsteht.
+                    </p>
+                </div>
+                <div class="booking-multiple-button">
+                    <a href="https://www.sumupbookings.com/haar-und-haerz" class="btn-booking-large" target="_blank">DRÜCK<br>MICH</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buche einen Termin Section -->
+    <section class="booking-steps-section">
+        <div class="container">
+            <h2 class="booking-main-title">BUCHE EINEN TERMIN</h2>
+
+            <div class="booking-steps-grid">
+                <!-- Schritt 1 -->
+                <div class="booking-step">
+                    <div class="booking-step-header">
+                        <div class="booking-step-icon">📞</div>
+                        <h3 class="booking-step-title">SCHRITT 1:</h3>
+                    </div>
+                    <div class="booking-step-content">
+                        <p class="booking-step-subtitle">Individuelle Preiskalkulation für spezielle Services:</p>
+                        <p class="booking-step-text">
+                            Leistungen wie Färben, Balayage, Strähnen oder Dauerwelle erfordern eine individuelle Kalkulation. Der Endpreis für diese Services kann variieren und liegt höher als die angegebenen Schnittpreise, da er abhängig von der Haarlänge, Haardichte und dem benötigten Aufwand abhängt.
+                        </p>
+                        <p class="booking-step-text">
+                            Daher ist eine <strong>persönliche Beratung und Preisspräche</strong> vor der Behandlung zwingend notwendig.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Schritt 2 -->
+                <div class="booking-step">
+                    <div class="booking-step-header">
+                        <div class="booking-step-icon">🏠</div>
+                        <h3 class="booking-step-title">SCHRITT 2:</h3>
+                    </div>
+                    <div class="booking-step-content">
+                        <p class="booking-step-subtitle">Ihr Zugang zur Online-Buchung:</p>
+                        <p class="booking-step-text">
+                            Nach erfolgreichem Abschluss einer <strong>persönlichen und individuellen Beratung</strong> erhalten Sie von uns einen persönlichen Code.
+                        </p>
+                        <p class="booking-step-text">
+                            Dieser Code berechtigt Sie, zukünftige Termine für alle Services eigenständig und jederzeit online zu buchen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-contact">
+                <p class="booking-contact-text">Kontaktieren Sie uns für eine persönliche Beratung:</p>
+                <div class="booking-contact-buttons">
+                    <a href="tel:0794490081" class="btn-contact-booking">📞 079 449 00 81</a>
+                    <a href="{% url 'website:kontakt' %}" class="btn-contact-booking">✉️ Kontaktformular</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Haar und Härz</h4>
+                    <p class="footer-text">Jasmin Feller</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Standort</h4>
+                    <p class="footer-text">Jasminstrasse 77,<br>5400 Burgdorf</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Kontakt</h4>
+                    <p class="footer-text">
+                        <a href="mailto:jasmin@haarundhaerz.com">jasmin@haarundhaerz.com</a><br>
+                        <a href="tel:0794490081">079 449 00 81</a>
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Info</h4>
+                    <p class="footer-text">Termin:<br>Anruf oder WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

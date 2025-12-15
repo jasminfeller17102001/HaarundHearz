@@ -47,6 +47,28 @@ Um die Website vollständig zu machen, müssen folgende Bilder hinzugefügt werd
 - **Beschreibung:** Bild von Lockenwicklern und Styling-Tools
 - **Empfohlene Größe:** 800x600 Pixel (Landscape Format)
 
+### Preise-Seite Bilder
+
+#### Kinder
+- **Pfad:** `website/static/images/price-kinder.png`
+- **Beschreibung:** Bild eines Jungen
+- **Status:** ✅ Vorhanden
+
+#### Frauen
+- **Pfad:** `website/static/images/price-frauen.png`
+- **Beschreibung:** Bild einer Frau
+- **Status:** ✅ Vorhanden
+
+#### Männer
+- **Pfad:** `website/static/images/price-männer.png`
+- **Beschreibung:** Bild eines Mannes
+- **Status:** ✅ Vorhanden
+
+#### Bewohner Senevita
+- **Pfad:** `website/static/images/price-senevita.png`
+- **Beschreibung:** Bild einer älteren Person
+- **Status:** ✅ Vorhanden
+
 ## Projektstruktur
 
 ```
@@ -77,33 +99,36 @@ HaarundHaerz/
 - **Hero Section:** Beeindruckende Willkommens-Sektion mit Hintergrundbild
 - **Dienstleistungen:** Drei Service-Karten (Schnitt, Farbe, Dauerwelle) mit Bildern und Beschreibungen
 - **Über-Mich Sektion:** Persönliche Vorstellung von Jasmin Feller
+- **Preise-Seite:** Vollständige Preisliste mit 4 Kategorien (Kinder, Frauen, Männer, Bewohner Senevita)
+- **Öffnungszeiten-Seite:** Übersichtliche Tabelle mit allen Öffnungszeiten (schwarze Tabelle auf türkisem Hintergrund)
+- **Kontakt-Seite:** Professionelles Kontaktformular mit Name, E-Mail und Nachricht-Feldern
+- **SumUp Booking-Seite:** Informationsseite mit 2 Sektionen (Mehrere Leistungen buchen + Termin-Buchung in 2 Schritten)
 - **Footer:** Kontaktinformationen, Standort und Info-Bereich
 - **Smooth Scrolling:** Sanftes Scrollen zu verschiedenen Bereichen der Seite
-- **Professional Styling:** Modernes, professionelles Design mit türkiser Hauptfarbe (#30D5C8)
+- **Professional Styling:** Modernes, professionelles Design mit Hauptfarbe RGB(59, 134, 139)
 
 ## Nächste Schritte
 
-1. **Bilder hinzufügen:**
-   - Logo: `website/static/images/logo.png`
-   - Hero-Hintergrundbild: `website/static/images/hero-background.png`
-   - Service-Bilder: `service-schnitt.jpg`, `service-farbe.jpg`, `service-dauerwelle.jpg`
+1. **Bilder Status:**
+   - ✅ Logo: `website/static/images/logo.png`
+   - ✅ Hero-Hintergrundbild: `website/static/images/hero-background.png`
+   - ✅ Service-Bilder: `service-schnitt.jpg`, `service-farbe.jpg`, `service-dauerwelle.jpg`
+   - ✅ Preise-Bilder: `price-kinder.png`, `price-frauen.png`, `price-männer.png`, `price-senevita.png`
 
-2. **Weitere Seiten erstellen** (optional):
-   - Preise-Seite
-   - Termine-Seite
-   - Öffnungszeiten-Seite
-   - Detaillierte Kontakt-Seite
-
-3. **Integration:**
-   - SumUp Booking Integration
+2. **Weitere Features** (optional):
+   - Kontaktformular Backend-Integration (E-Mail-Versand)
+   - Echte SumUp Booking Integration mit API
    - Google Maps für Standort
    - WhatsApp Button
+   - Cookie Banner / Datenschutz
 
-4. **SEO & Performance:**
+3. **SEO & Performance:**
    - Meta-Tags hinzufügen
    - Bilder optimieren
    - SSL-Zertifikat für Produktion
 
 ## Kontakt
 
-Bei Fragen oder Problemen, bitte melden!
+Bei Fragen oder Problemen:
+- Telefon: 079 449 00 81
+- E-Mail: jasmin@haarundhaerz.com

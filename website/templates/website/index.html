@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haar & Härz - Coiffeur</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
@@ -16,12 +19,11 @@
                 </div>
                 <nav class="navigation">
                     <ul class="nav-list">
-                        <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#preise" class="nav-link">Preise</a></li>
-                        <li><a href="#termine" class="nav-link">Termine</a></li>
-                        <li><a href="#oeffnungszeiten" class="nav-link">Öffnungszeiten</a></li>
-                        <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
-                        <li><a href="#booking" class="nav-link">SumUp Booking</a></li>
+                        <li><a href="{% url 'website:index' %}" class="nav-link active">Home</a></li>
+                        <li><a href="{% url 'website:preise' %}" class="nav-link">Preise</a></li>
+                        <li><a href="{% url 'website:oeffnungszeiten' %}" class="nav-link">Öffnungszeiten</a></li>
+                        <li><a href="{% url 'website:kontakt' %}" class="nav-link">Kontakt</a></li>
+                        <li><a href="{% url 'website:booking' %}" class="nav-link">SumUp Booking</a></li>
                     </ul>
                 </nav>
                 <div class="header-button">
@@ -113,7 +115,7 @@
                     <h4 class="footer-heading">Kontakt</h4>
                     <p class="footer-text">
                         <a href="mailto:jasmin@haarundhaerz.com">jasmin@haarundhaerz.com</a><br>
-                        <a href="tel:0796830081">079 683 00 81</a>
+                        <a href="tel:0794490081">079 449 00 81</a>
                     </p>
                 </div>
                 <div class="footer-column">
